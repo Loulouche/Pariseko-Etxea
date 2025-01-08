@@ -1,0 +1,67 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Police par défaut */
+    background-color: #f4f4f4; /* Couleur de fond du site */
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between; /* Espacement entre logo et navigation */
+    align-items: center;
+    padding: 20px 40px; /* Espacement autour du header */
+    background-color: #d32f2f; /* Rouge (couleur de fond du header) */
+    color: white; /* Couleur du texte */
+}
+
+.logo-img {
+    height: 60px; /* Taille du logo */
+    width: auto; /* Garde les proportions du logo */
+}
+
+.nav ul {
+    display: flex; /* Disposition en ligne pour les boutons */
+    list-style: none; /* Enlève les puces des items de la liste */
+}
+
+.nav li {
+    margin: 0 15px; /* Espacement entre les boutons */
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: #ffcc00; /* Couleur au survol des liens */
+}
+
+/* Responsiveness - adaptation pour écrans plus petits */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Empile le logo et la navigation sur mobile */
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column; /* Met les boutons les uns en dessous des autres */
+        padding: 10px 0;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+
+    .logo-img {
+        height: 50px; /* Réduit la taille du logo sur mobile */
+    }
+}
