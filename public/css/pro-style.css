@@ -59,67 +59,96 @@ body {
     background-position: center top;
     background-attachment: fixed;
 }
-.background-container {
-    background-color: #808080; /* a remplacer par une image de fond */
-    padding: 20px; 
-    display: block;
-}
-
-
 .box1 {
     background-color: white;
     padding: 40px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 60%;
     margin-top: 2%;
     margin-left: 5%;
 }
 
-.content h1 {
-    font-size: 36px;
-    font-weight: normal;
-    color: black;
+h1 {
+    font-size: 50px;  
+    font-weight: bold;  
+    color: black;  
+    margin-bottom: 20px; 
+}
+p {
+    font-size: 17px; /* Taille de la police */ 
+    color: #777;  
+    margin-bottom: 40px;  
+    line-height: 1.5;  
+}
+
+
+form {
+    width: 50%; /* Largeur du formulaire */
+    margin-left: 5%; 
+    padding: 30px;
+    background-color: #ffffff; /* Fond blanc */
+}
+
+form h1 {
+    font-size: 28px;
+    color: #333; /* Couleur du titre */
     margin-bottom: 20px;
-}
-
-.content p {
-    font-size: 18px;
-    color: black;
-    margin-bottom: 15px;
-}
-
-.content ul {
-    font-size: 16px;
-    color: black;
-    list-style-type: none;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.content ul li {
-    margin-bottom: 10px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #d32f2f; 
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: normal;  
     text-align: center;
-    border-radius: 5px;
-    margin-top: 20px;
 }
 
-.btn:hover {
-    background-color: #8b0000;; /* Couleur de survol */
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
 }
 
-/* Responsiveness - adaptation pour écrans plus petits */
+input, select, textarea {
+    width: 100%; 
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+
+select {
+    background-color: #fff;
+    color: #333;
+}
+
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d32f2f; /* Rouge du bouton */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8b0000; /* Couleur plus foncée au survol */
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+
+/* Responsiveness */
 @media (max-width: 768px) {
     .header {
         flex-direction: column; 
