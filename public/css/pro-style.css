@@ -82,8 +82,6 @@ p {
     margin-bottom: 40px;  
     line-height: 1.5;  
 }
-
-
 form {
     width: 50%; /* Largeur du formulaire */
     margin-left: 5%; 
@@ -114,18 +112,15 @@ input, select, textarea {
     font-size: 16px;
 }
 
-
 select {
     background-color: #fff;
     color: #333;
 }
 
-
 textarea {
     resize: vertical;
     min-height: 150px;
 }
-
 
 button {
     width: 100%;
@@ -143,9 +138,6 @@ button:hover {
     background-color: #8b0000; /* Couleur plus foncée au survol */
 }
 
-div {
-    margin-bottom: 20px;
-}
 
 
 /* Responsiveness */
